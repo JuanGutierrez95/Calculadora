@@ -11,26 +11,23 @@ function calcular(operador) {
   switch (operador) {
     case "+":
       resultado.value = numberOne + numberTwo;
-      alert("El resultado de la suma es: " + resultado.value);
+
       break;
     case "-":
       resultado.value = numberOne - numberTwo;
-      alert("El resultado de la resta es: " + resultado.value);
+
       break;
     case "*":
       resultado.value = numberOne * numberTwo;
-      alert("El resultado de la multiplicación es: " + resultado.value);
+
       break;
     case "/":
       if (numberTwo != 0) {
         resultado.value = numberOne / numberTwo;
-        alert("El resultado de la división es: " + resultado.value);
-      } else {
-        alert(resultado.value + ": División por cero");
       }
       break;
     default:
-      resultado.value = "Error";
+      resultado.value = "";
       break;
   }
 }
