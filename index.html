@@ -8,21 +8,29 @@
   </head>
   <body>
     <h1>Calculadora</h1>
-    <form>
-        <div>
-            <input></input>
-            <input></input>
-        </div>
-        <div>
-            <button>+</button>
-            <button>-</button>
-            <button>*</button>
-            <button>/</button>
-        </div>
-        <div>
 
-        </div>
-    </form>
+    <div>
+      <input
+        type="number"
+        id="numero1"
+        placeholder="Number 1"
+        oninput="calcular()"
+      />
+      <input
+        type="number"
+        id="numero2"
+        placeholder="Number 2"
+        oninput="calcular()"
+      />
+    </div>
+    <div>
+      <button onclick="calcular('+')">+</button>
+      <button onclick="calcular('-')">-</button>
+      <button onclick="calcular('*')">*</button>
+      <button onclick="calcular('/')">/</button>
+    </div>
+    <div></div>
+
     <script src="script.js"></script>
   </body>
 </html>
